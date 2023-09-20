@@ -1,18 +1,18 @@
 import React from 'react'
-import { useState, useEffect, useCallback } from 'react'
+import { useState} from 'react'
 import Datepicker from "react-tailwindcss-datepicker";
 
 import {IoIosArrowDown} from 'react-icons/io'
 import {FiSearch} from 'react-icons/fi'
 export const TicketFilter = () => {
-  const [ticketType, setTicketType] = useState(true);
-  const [organization, setOrganization] = useState(true);
-  const [dateRange, setDateRange] = useState(true);
-  const [asset, setAssets] = useState(true);
-  const [reporter, setReporter] = useState(true);
-  const [assignee, setAssignee] = useState(true);
-  const [incident, setIncident] = useState(true);
-  const [indicators, setindicators] = useState(true);
+//   const [ticketType, setTicketType] = useState(true);
+//   const [organization, setOrganization] = useState(true);
+//   const [dateRange, setDateRange] = useState(true);
+//   const [asset, setAssets] = useState(true);
+//   const [reporter, setReporter] = useState(true);
+//   const [assignee, setAssignee] = useState(true);
+//   const [incident, setIncident] = useState(true);
+//   const [indicators, setindicators] = useState(true);
 
   return (
     <> 
@@ -21,6 +21,8 @@ export const TicketFilter = () => {
         placeholder='Find ticket'
         items= {[{value: 'Cyber'},{value: 'Help Desk'}]}
        />
+
+        <DropDownOrganization/>
 
         <DateRangePicker/>
 
@@ -88,6 +90,15 @@ export const DropDown = (props) => {
          }
       </div>
     )
+}
+
+
+export const DropDownOrganization = () => {
+  return (
+    <div>
+
+    </div>
+  )
 }
 
 
