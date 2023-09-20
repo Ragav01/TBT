@@ -58,4 +58,7 @@
     font-family: 'Open Sans', sans-serif;
   }
   
+  body{
+    @apply bg-surface-light-secondary
+  }
 }
