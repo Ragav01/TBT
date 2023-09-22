@@ -4,7 +4,7 @@ import search from '../assets/icons/search.svg'
 import avatar from '../assets/avatar-image.jpg'
 export const Appbar = () => {
   return (
-    <div className='h-16 px-4 bg-white flex items-center justify-between'>
+    <div className='h-16 px-4 sticky top-0 z-30 bg-white flex items-center justify-between'>
         <div className='relative'>
             <img src={search} className='absolute top-2.5 left-3' alt="" />
             <input type="text" placeholder='Search menus, Tickets, Etc' className='outline-none border border-borderColor-secondary rounded-md pl-10 pr-4 h-10 w-[532px]' />

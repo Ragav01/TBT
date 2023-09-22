@@ -59,6 +59,39 @@
   }
   
   body{
-    @apply bg-surface-light-secondary
+    @apply bg-surface-light-secondary text-textColor-base
+  }
+}
+
+@layer components{
+  th{
+    @apply text-xs text-left h-10 px-2 whitespace-nowrap uppercase  bg-surface-light-secondary border-y border-borderColor-secondary
+  }
+  tr{
+    @apply  h-14 cursor-pointer border-l-2 border-surface-light-primary hover:border-secondary-500 hover:shadow-lg
+  }
+  td{
+    @apply text-sm text-left px-2 truncate
+  }
+}
+
+@layer utilities {
+  .chip{
+    @apply h-5 2xl:h-6 text-[10px] 2xl:text-sm px-1 2xl:px-2 font-medium text-info-600 inline-flex items-center rounded 2xl:rounded-md border bg-info-100 border-info-500
+  }
+  .priority-chip{
+    @apply h-5 2xl:h-6 text-[10px] 2xl:text-sm px-1 2xl:px-2 font-medium inline-flex items-center gap-x-1 rounded-md border  before:h-1.5 before:w-1.5  before:block before:rounded-full
+  }
+  .priority-low{
+    @apply bg-success-100 border-success-500 text-success-600 before:bg-success-500
+  }
+  .priority-medium{
+    @apply bg-info-100 border-info-500 text-info-600 before:bg-info-500
+  }
+  .priority-high{
+    @apply bg-warning-100 border-warning-500 text-warning-600 before:bg-warning-500
+  }
+  .priority-critical{
+    @apply bg-danger-100 border-danger-500 text-danger-600 before:bg-danger-500
   }
 }

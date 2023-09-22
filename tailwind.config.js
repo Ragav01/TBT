@@ -39,10 +39,10 @@ module.exports = {
           100: 'var(--color-danger-100)'
         },
         info:{
-          600: 'var(--color-danger-600)',
-          600: 'var(--color-danger-500)',
-          600: 'var(--color-danger-400)',
-          600: 'var(--color-danger-100)',
+          600: 'var(--color-info-600)',
+          500: 'var(--color-info-500)',
+          400: 'var(--color-info-400)',
+          100: 'var(--color-info-100)',
         },
         surface:{
           light:{
@@ -71,6 +71,9 @@ module.exports = {
           black: 'var(--color-black)',
           white: 'var(--color-white)',
         }
+      },
+      screens:{
+        '2xl': '1600px'
       }
     },
   },

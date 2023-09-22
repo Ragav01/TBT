@@ -19,7 +19,7 @@ export default function Navbar() {
     {title: 'MDI DEV', color: '#22C55E'},
   ]
   return (
-    <div className={`${open ? 'w-[280px]': 'w-[64px]'} h-screen duration-300 bg-surface-dark-primary text-textColor-base`}>
+    <div className={`${open ? 'min-w-[260px]': 'w-[64px]'} h-screen sticky top-0 duration-300 bg-surface-dark-primary text-textColor-base`}>
         {/* Header - Logo */}
         <div className='w-full h-16 px-3 flex justify-between items-center border-b border-[#161A2B]'>
             <img className={`${open ? 'block': 'hidden'}`} src={logo} alt="Logo" />
