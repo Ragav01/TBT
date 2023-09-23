@@ -2,7 +2,9 @@ import React from 'react'
 import exl from '../assets/exl.svg'
 import { TicketFilter } from '../components/TicketFilter'
 import { Table } from '../components/TicketTable'
-export const Tickets = () => {
+import { NavLink } from 'react-router-dom'
+
+const Tickets = () => {
   return (
     <>
      <p className='Text-xl font-semibold'>All Tickets (1,614)</p>
@@ -17,13 +19,15 @@ export const Tickets = () => {
                 <img src={exl} alt="" />
                 Export Tickets
             </button>
-            <button className='h-10 rounded-md px-3 flex items-center gap-x-1 text-sm text-base-white bg-secondary-500 hover:bg-secondary-600'>
+            <NavLink to={'addcyberticket'} className='h-10 rounded-md px-3 flex items-center gap-x-1 text-sm text-base-white bg-secondary-500 hover:bg-secondary-600'>
                 <span class="material-symbols-outlined"> add </span>
                 Add New Tickets
-            </button>
+            </NavLink>
         </div>
      </div>
      <Table/>
     </>
   )
 }
+
+export default Tickets

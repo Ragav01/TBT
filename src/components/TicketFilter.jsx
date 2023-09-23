@@ -39,9 +39,7 @@ export const TicketFilter = () => {
                 <span class="material-symbols-outlined"> add </span>
                 Add New Ticket
             </button>
-            {
-                active &&
-                <ul className='absolute w-full z-20  mt-1 rounded-md overflow-hidden border-2 border-surface-light-primary bg-surface-light-primary shadow-lg shadow-primary-100 duration-300'>
+                <ul className={`${ active ? 'visible': 'hidden'} absolute w-full z-20  mt-1 rounded-md overflow-hidden border-2 border-surface-light-primary bg-surface-light-primary shadow-lg shadow-primary-100 duration-500 ease-in`}>
                     <li>
                         <button onClick={() => setPriority(!priority)} htmlFor='Assets' className='w-full outline-none flex items-center gap-x-3 pl-2.5 h-10 cursor-pointer hover:bg-primary-100'>
                             <input type="checkbox" checked={priority}   id='Assets'/>
@@ -79,7 +77,6 @@ export const TicketFilter = () => {
                         </button>
                     </li>
                 </ul>
-            }
         </div>
     </>
   )
