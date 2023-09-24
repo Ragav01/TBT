@@ -59,7 +59,7 @@
   }
   
   body{
-    @apply bg-surface-light-secondary text-textColor-base
+    @apply bg-surface-light-secondary text-textColor-base accent-primary-500
   }
 }
 

@@ -1,4 +1,4 @@
-const allTickets = [
+const cyberTickets = [
     {
         "ticketId": 1,
         "ticketType": "Cyber",
@@ -144,4 +144,4 @@ const allTickets = [
     }
 ]
 
-export default allTickets
+export default cyberTickets

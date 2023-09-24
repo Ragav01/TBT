@@ -1,12 +1,11 @@
 import React from 'react'
 import { useState} from 'react'
-
 import Datepicker from "react-tailwindcss-datepicker";
 import {IoIosArrowDown} from 'react-icons/io'
 import {IoCloseOutline} from 'react-icons/io5'
 import {FiSearch} from 'react-icons/fi'
 
-export const TicketFilter = () => {
+export const CyberFilter = () => {
   const [reporter, setReporter] = useState(false);
   const [priority, setPriority] = useState(false);
   const [device, setDevice] = useState(false);
@@ -17,12 +16,6 @@ export const TicketFilter = () => {
 
   return (
     <> 
-       <DropDown 
-        title='Ticket Type' 
-        placeholder='Find ticket'
-        items= {[{value: 'Cyber'},{value: 'Help Desk'}]}
-       />
-
         <DropDownOrganization/>
 
         <DateRangePicker/>
@@ -32,12 +25,12 @@ export const TicketFilter = () => {
         { reporter && <DropDown title='Reporter' placeholder='Find Reporter' items= {[{value: 'Jacob Jones'},{value: 'Ronald Richards'},{value: 'Dianne Russell'},{value: 'Floyd Miles'}]} /> }
         { assignee && <DropDown title='Select Assignee' placeholder='Find Reporter' items= {[{value: 'Jacob Jones'},{value: 'Ronald Richards'},{value: 'Dianne Russell'},{value: 'Floyd Miles'}]} /> }
         { incident && <DropDown title='Incident Type' placeholder='Find Incident Type' items= {[{value: 'Malware Attack'},{value: 'Brute Force'}]} /> }
-        { indicators && <Indicators/> }
+        { indicators && <Indicators value={['192.168.177.54','191.168.173.5']} placeholder='Add Indicators'/> }
         
         <div className='relative'>
-            <button onClick={() => setActive(!active)} className={`${active && 'bg-primary-100'} h-10 px-3 flex items-center gap-x-1 hover:bg-primary-100 duration-200 text-primary-600 text-sm font-semibold rounded-md`}>
+            <button onClick={() => setActive(!active)} className={`${active && 'bg-primary-100 w-[160px]'} h-10  px-3 flex items-center gap-x-1 hover:bg-primary-100 duration-200 text-primary-600 text-sm font-semibold rounded-md`}>
                 <span class="material-symbols-outlined"> add </span>
-                Add New Ticket
+                Add Filter
             </button>
                 <ul className={`${ active ? 'visible': 'hidden'} absolute w-full z-20  mt-1 rounded-md overflow-hidden border-2 border-surface-light-primary bg-surface-light-primary shadow-lg shadow-primary-100 duration-500 ease-in`}>
                     <li>
@@ -82,7 +75,28 @@ export const TicketFilter = () => {
   )
 }
 
-
+export const HelpDeskFilter = () => {
+    return(
+        <>
+            <DateRangePicker/>
+            <DropDown 
+             title='Select Priority' 
+             placeholder='Find Priority' 
+             items= {[{value: 'Low'},{value: 'Medium'},{value: 'High'},{value: 'Critical'}]} 
+            /> 
+            <DropDown 
+             title='Select Application' 
+             placeholder='Find Application' 
+             items= {[{value: 'Device_45r'},{value: 'Device_3'},{value: 'Device_56'},{value: 'Device_11'}]} 
+            />
+            <DropDown 
+             title='Select Agent' 
+             placeholder='Find Agent' 
+             items= {[{value: 'Jacob Jones'},{value: 'Ronald Richards'},{value: 'Dianne Russell'},{value: 'Floyd Miles'}]} 
+             />
+        </>
+    )
+}
 
 export const DropDown = (props) => {
 
@@ -222,8 +236,8 @@ export const DateRangePicker = () => {
 }
 
 
-export const Indicators = () => {
-    const [chip, setChip] = useState(['192.168.177.54','191.168.173.5']);
+export const Indicators = (props) => {
+    const [chip, setChip] = useState(props.value);
     const addChips = (e) =>{
         if(e.key === 'Enter'){
             setChip([...chip, e.target.value]);
@@ -245,7 +259,7 @@ export const Indicators = () => {
                 ))
             }
         </ul>
-        <input type="text" onKeyUp={addChips} className='text-sm outline-none bg-transparent' placeholder='Add Indicators' />
+        <input type="text" onKeyUp={addChips} className='text-sm  outline-none bg-transparent' placeholder={props.placeholder} />
     </div>
   )
 }

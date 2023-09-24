@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Appbar from "./components/Appbar";
 import Navbar from "./components/Navbar";
 import Tickets  from "./pages/Tickets";
-import AddCyberTicket from "./pages/AddCyberTicket";
+import AddTicket from "./pages/AddTicket";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
               <Routes>
                 <Route path="tickets">
                   <Route index element={<Tickets/>}/>
-                  <Route path="addcyberticket" element={<AddCyberTicket/>}/>
+                  <Route path="addticket" element={<AddTicket/>}/>
                 </Route>
                 <Route path="addticket" element={<Tickets/>}/>
                 <Route path="editticket" element={<Tickets/>}/>
