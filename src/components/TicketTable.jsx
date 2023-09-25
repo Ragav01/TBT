@@ -159,29 +159,29 @@ const ModalContent = () => {
             <span className='h-6 text-sm  px-2 bg-success-100 text-success-600 border border-success-600 inline-flex items-center rounded-md'>Low</span>
           </div>
         </div>
-      <div className='mt-10 flex flex-wrap gap-x-14 gap-y-8 2xl:gap-x-24 2xl:gap-y-10'>
+      <div className='mt-10 flex flex-wrap gap-x-14 gap-y-8 '>
         <div className='space-y-3'>
             <p className='text-xs uppercase font-semibold'>Ticket Type:</p>
-            <p className='font-medium'>Help Desk</p>
+            <p className='text-base font-medium'>Help Desk</p>
         </div>
         <div className='space-y-3'>
             <p className='text-xs uppercase font-semibold'>Application:</p>
-            <p className='font-medium'>Application-e8</p>
+            <p className='text-base font-medium'>Application-e8</p>
         </div>
         <div className='space-y-3'>
             <p className='text-xs uppercase font-semibold'>Phone number:</p>
-            <p className='font-medium'>+61 234 6783 453 </p>
+            <p className='text-base font-medium'>+61 234 6783 453 </p>
         </div>
         <div className='space-y-3'>
             <p className='text-xs uppercase font-semibold'>Agent:</p>
             <div className="flex items-center justify-center gap-x-3">
               <span className='h-6 w-6 text-xs flex items-center justify-center bg-primary-500 text-base-white rounded-full'>RR</span>
-              <p className='font-medium'>Ronald Richards</p>
+              <p className='text-base font-medium'>Ronald Richards</p>
             </div>
         </div>
         <div className='space-y-3'>
             <p className='text-xs uppercase font-semibold'>Description </p>
-            <p className='font-medium whitespace-normal'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis autem asperiores assumenda sunt consequuntur esse non error ea, earum enim. Sed fugit ad a vitae. </p>
+            <p className='text-base font-medium whitespace-normal'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis autem asperiores assumenda sunt consequuntur esse non error ea, earum enim. Sed fugit ad a vitae. </p>
         </div>
 
         <div className='mt-4 space-y-3'>
