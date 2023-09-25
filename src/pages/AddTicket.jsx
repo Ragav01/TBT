@@ -29,7 +29,7 @@ const AddCyberTicket = () => {
         </div>
       </div>
 
-      <div className='grid grid-cols-1 xl:grid-cols-2 gap-y-8 gap-x-16 mt-6 bg-surface-light-primary p-4 rounded-lg'>
+      <div className='grid grid-cols-1 xl:grid-cols-2 gap-y-8 gap-x-16 mt-6 bg-surface-light-primary p-4 pt-8 border border-borderColor-secondary rounded-lg'>
         <div className='space-y-3'>
           <p className='text-sm uppercase font-semibold'>Select Ticket Type</p>
           <div className='flex gap-x-5'>

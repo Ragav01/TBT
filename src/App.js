@@ -3,6 +3,7 @@ import Appbar from "./components/Appbar";
 import Navbar from "./components/Navbar";
 import Tickets  from "./pages/Tickets";
 import AddTicket from "./pages/AddTicket";
+import { ViewTicket } from "./pages/ViewTicket";
 
 function App() {
   return (
@@ -17,9 +18,9 @@ function App() {
                 <Route path="tickets">
                   <Route index element={<Tickets/>}/>
                   <Route path="addticket" element={<AddTicket/>}/>
+                  <Route path="viewticket" element={<ViewTicket/>}/>
+                  <Route path="editticket" element={<Tickets/>}/>
                 </Route>
-                <Route path="addticket" element={<Tickets/>}/>
-                <Route path="editticket" element={<Tickets/>}/>
               </Routes>
             </main>
           </div>   

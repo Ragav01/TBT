@@ -40,7 +40,7 @@ const Texteditor = () => {
 
             {/* ColorStyle */}
             <div className='inline-flex items-center gap-x-2 p-1 rounded-lg bg-surface-light-primary'>
-                <div className='h-8 w-8 bg-amber-300 rounded-md'></div>
+                <div className='h-8 w-8 bg-black rounded-md'></div>
                 <HiOutlineChevronDown/>
             </div>
             {/* AlignStyle */}
@@ -66,7 +66,7 @@ const Texteditor = () => {
             </div>
         </div>
 
-        <textarea name="" id="" className='w-full h-[230px] outline-none p-5' placeholder='Type @ to mention and notify someone'></textarea>
+        <textarea name="" id="" className='w-full h-full outline-none p-5' placeholder='Type @ to mention and notify someone'></textarea>
     </div>
   )
 }

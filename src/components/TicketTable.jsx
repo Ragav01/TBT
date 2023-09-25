@@ -4,6 +4,7 @@ import {BiEditAlt} from 'react-icons/bi'
 import {AiOutlineEye} from 'react-icons/ai'
 import cyberTickets from '../data/cyberTickets'
 import helpDeskTickets from '../data/helpDeskTable'
+import { NavLink } from 'react-router-dom'
 
 export const Table = (props) => {
     return (
@@ -79,13 +80,13 @@ const CyberTable = () => {
                         </td>
                         <td>{item.reporter}</td>
                         <td>{item.assignee}</td>
-                        <td className='space-x-1'>
-                            <button className='text-xl text-textColor-muted hover:text-textColor-base hover:bg-primary-100 p-1 rounded-md'>
-                            <BiEditAlt/>
-                            </button>
-                            <button className='text-xl text-textColor-muted hover:text-textColor-base hover:bg-primary-100 p-1 rounded-md'>
-                            <AiOutlineEye/>
-                            </button>
+                        <td className='flex gap-x-2'>
+                            <NavLink to={'editicket'} className='mt-3 text-xl text-textColor-muted hover:text-textColor-base hover:bg-primary-100 p-1 rounded-md'>
+                              <BiEditAlt/>
+                            </NavLink>
+                            <NavLink to={'viewticket'} className='mt-3 text-xl text-textColor-muted hover:text-textColor-base hover:bg-primary-100 p-1 rounded-md'>
+                              <AiOutlineEye/>
+                            </NavLink>
                         </td>
                     </tr>
                 ))
@@ -127,10 +128,10 @@ const HelpDeskTable = () => {
                         <td>{item.phoneNumber}</td>
                         <td>{item.agent}</td>
                         <td className='max-w-[360px] pr-4'>{item.description}</td>
-                        <td className='space-x-1'>
-                            <button className='text-xl text-textColor-muted hover:text-textColor-base hover:bg-primary-100 p-1 rounded-md'>
-                                <AiOutlineEye/>
-                            </button>
+                        <td className='flex gap-x-2'>
+                            <NavLink to={'viewticket'} className='mt-3 text-xl text-textColor-muted hover:text-textColor-base hover:bg-primary-100 p-1 rounded-md'>
+                              <AiOutlineEye/>
+                            </NavLink>
                         </td>
                     </tr>
                 ))

@@ -8,7 +8,7 @@ const cyberTickets = [
         "location": "Weill Cornell Medicine Primary Care - East 72nd St",
         "assetsDevice": "Server",
         "incidentType": ["Malware Attack","Brute Force","Brute Force","Brute Force"],
-        "indicators": ["192.168.177.54","192.168.177.54","192.168.177.54","192.168.177.54"],
+        "indicators": ["192.168.177.54","192.8.177.54"],
         "reporter": "Darlene Robertson",
         "assignee": "Ronald Richards"
     },
@@ -21,7 +21,7 @@ const cyberTickets = [
         "location": "Weill Cornell Medicine Primary Care - East 72nd St",
         "assetsDevice": "Server",
         "incidentType": ["Brute Force","Brute Force","Brute Force"],
-        "indicators": ["192.168.177.54","192.168.177.54","192.168.177.54","192.168.177.54"],
+        "indicators": ["192.168.177.54","192.8.177.54"],
         "reporter": "Darlene Robertson",
         "assignee": "Ronald Richards"
     },
@@ -34,7 +34,7 @@ const cyberTickets = [
         "location": "Weill Cornell Medicine Primary Care - East 72nd St",
         "assetsDevice": "PC",
         "incidentType": ["Malware Attack"],
-        "indicators": ["192.168.177.54","192.168.177.54","192.168.177.54","192.168.177.54"],
+        "indicators": ["192.168.177.54","192.8.177.54"],
         "reporter": "Darlene Robertson",
         "assignee": "Ronald Richards"
     },
@@ -47,7 +47,7 @@ const cyberTickets = [
         "location": "Weill Cornell Medicine Primary Care - East 72nd St",
         "assetsDevice": "Device1",
         "incidentType": ["Malware Attack","Brute Force","Brute Force","Brute Force"],
-        "indicators": ["192.168.177.54","192.168.177.54","192.168.177.54","192.168.177.54"],
+        "indicators": ["192.168.177.54","192.8.177.54"],
         "reporter": "Darlene Robertson",
         "assignee": "Ronald Richards"
     },
@@ -60,7 +60,7 @@ const cyberTickets = [
         "location": "Weill Cornell Medicine Primary Care - East 72nd St",
         "assetsDevice": "Server",
         "incidentType": ["Brute Force","Malware Attack","Brute Force","Brute Force"],
-        "indicators": ["192.168.177.54","192.168.177.54","192.168.177.54","192.168.177.54"],
+        "indicators": ["192.168.177.54","192.8.177.54"],
         "reporter": "Darlene Robertson",
         "assignee": "Ronald Richards"
     },
@@ -73,7 +73,7 @@ const cyberTickets = [
         "location": "Weill Cornell Medicine Primary Care - East 72nd St",
         "assetsDevice": "Mobile",
         "incidentType": ["Brute Force"],
-        "indicators": ["192.168.177.54","192.168.177.54","192.168.177.54","192.168.177.54"],
+        "indicators": ["192.168.177.54","192.8.177.54"],
         "reporter": "Darlene Robertson",
         "assignee": "Ronald Richards"
     },
@@ -86,7 +86,7 @@ const cyberTickets = [
         "location": "Weill Cornell Medicine Primary Care - East 72nd St",
         "assetsDevice": "Router",
         "incidentType": ["Brute Force","Malware Attack","Brute Force"],
-        "indicators": ["192.168.177.54","192.168.177.54","192.168.177.54","192.168.177.54"],
+        "indicators": ["192.168.177.54","192.8.177.54"],
         "reporter": "Darlene Robertson",
         "assignee": "Ronald Richards"
     },
@@ -99,7 +99,7 @@ const cyberTickets = [
         "location": "Weill Cornell Medicine Primary Care - East 72nd St",
         "assetsDevice": "Server",
         "incidentType": ["Malware Attack","Brute Force","Brute Force","Brute Force"],
-        "indicators": ["192.168.177.54","192.168.177.54","192.168.177.54","192.168.177.54"],
+        "indicators": ["192.168.177.54","192.8.177.54"],
         "reporter": "Darlene Robertson",
         "assignee": "Ronald Richards"
     },
@@ -112,7 +112,7 @@ const cyberTickets = [
         "location": "Weill Cornell Medicine Primary Care - East 72nd St",
         "assetsDevice": "Mobile",
         "incidentType": ["Brute Force","Brute Force","Brute Force"],
-        "indicators": ["192.168.177.54","192.168.177.54","192.168.177.54","192.168.177.54"],
+        "indicators": ["192.168.177.54","192.8.177.54"],
         "reporter": "Darlene Robertson",
         "assignee": "Ronald Richards"
     },
@@ -125,7 +125,7 @@ const cyberTickets = [
         "location": "Weill Cornell Medicine Primary Care - East 72nd St",
         "assetsDevice": "Server",
         "incidentType": ["Brute Force","Malware Attack","Brute Force","Brute Force"],
-        "indicators": ["192.168.177.54","192.168.177.54","192.168.177.54","192.168.177.54"],
+        "indicators": ["192.168.177.54","192.8.177.54"],
         "reporter": "Darlene Robertson",
         "assignee": "Ronald Richards"
     },
@@ -138,7 +138,7 @@ const cyberTickets = [
         "location": "Weill Cornell Medicine Primary Care - East 72nd St",
         "assetsDevice": "Server",
         "incidentType": ["Malware Attack"],
-        "indicators": ["192.168.177.54","192.168.177.54","192.168.177.54","192.168.177.54"],
+        "indicators": ["192.168.177.54","192.8.177.54"],
         "reporter": "Darlene Robertson",
         "assignee": "Ronald Richards"
     }

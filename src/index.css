@@ -80,7 +80,7 @@
     @apply bg-secondary-500 text-base-white
   }
   .chip{
-    @apply h-5 2xl:h-6 text-[10px] 2xl:text-sm px-1 2xl:px-2 font-semibold 2xl:font-medium text-info-600 inline-flex items-center rounded 2xl:rounded-md border bg-info-100 border-info-500
+    @apply h-6 text-sm px-1 font-medium text-info-600 inline-flex items-center rounded 2xl:rounded-md border bg-info-100 border-info-500
   }
   .priority-chip{
     @apply h-5 2xl:h-6 text-[10px] 2xl:text-sm px-1 2xl:px-2 font-semibold 2xl:font-medium inline-flex items-center gap-x-1 rounded-md border  before:h-1.5 before:w-1.5  before:block before:rounded-full
