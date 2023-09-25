@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import {FiMoreHorizontal, FiChevronRight} from 'react-icons/fi'
 import {GoDownload} from 'react-icons/go'
 import {BiEditAlt} from 'react-icons/bi'
@@ -35,10 +35,10 @@ export const ViewTicket = () => {
           <span className='text-textColor-base cursor-default'>Add Ticket</span>
         </div>
         <div className='flex gap-x-3'>
-            <button className='h-10 rounded-md px-3 flex items-center gap-x-1 text-sm text-base-white bg-secondary-500 hover:bg-secondary-600'>
+            <Link to={'../editticket'} className='h-10 rounded-md px-3 flex items-center gap-x-1 text-sm text-base-white bg-secondary-500 hover:bg-secondary-600'>
                 <BiEditAlt className='text-lg'/>
                 Edit Tickets
-            </button>
+            </Link>
             <button className='h-10 rounded-md px-3 flex items-center gap-x-2 text-sm font-semibold text-base-black border border-borderColor-secondary hover:bg-primary-100'>
               Tickets History
             </button>

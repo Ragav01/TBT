@@ -85,7 +85,7 @@ const CyberTable = () => {
                         <td>{item.reporter}</td>
                         <td>{item.assignee}</td>
                         <td className='flex gap-x-2'>
-                            <NavLink to={'editicket'} className='mt-3 text-xl text-textColor-muted hover:text-textColor-base hover:bg-primary-100 p-1 rounded-md'>
+                            <NavLink to={'editticket'} className='mt-3 text-xl text-textColor-muted hover:text-textColor-base hover:bg-primary-100 p-1 rounded-md'>
                               <BiEditAlt/>
                             </NavLink>
                             <NavLink to={'viewticket'} className='mt-3 text-xl text-textColor-muted hover:text-textColor-base hover:bg-primary-100 p-1 rounded-md'>
