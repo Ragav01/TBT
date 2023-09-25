@@ -44,7 +44,7 @@ export const ViewTicket = () => {
             </button>
         </div>
       </div>
-
+      
       <div className='p-4 pt-8 mt-6 bg-surface-light-primary border border-borderColor-secondary rounded-lg'>
         <div className='space-y-2'>
           <div className='flex items-center gap-2'>

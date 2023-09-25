@@ -2,10 +2,14 @@ import React from 'react'
 import {FiSearch} from 'react-icons/fi'
 import {BiEditAlt} from 'react-icons/bi'
 import {AiOutlineEye} from 'react-icons/ai'
+import {GoDownload} from 'react-icons/go'
 import cyberTickets from '../data/cyberTickets'
 import helpDeskTickets from '../data/helpDeskTable'
 import { NavLink } from 'react-router-dom'
-
+import { Modal } from '../components/Modal'
+import docs from '../assets/icons/docs.svg'
+import xsl from '../assets/icons/xsl.svg'
+import zip from '../assets/icons/zip.svg'
 export const Table = (props) => {
     return (
     <div className='mt-6 bg-surface-light-primary overflow-hidden h-full rounded-md border border-borderColor-secondary'>
@@ -129,9 +133,7 @@ const HelpDeskTable = () => {
                         <td>{item.agent}</td>
                         <td className='max-w-[360px] pr-4'>{item.description}</td>
                         <td className='flex gap-x-2'>
-                            <NavLink to={'viewticket'} className='mt-3 text-xl text-textColor-muted hover:text-textColor-base hover:bg-primary-100 p-1 rounded-md'>
-                              <AiOutlineEye/>
-                            </NavLink>
+                            <Modal content={<ModalContent/>} />
                         </td>
                     </tr>
                 ))
@@ -139,4 +141,70 @@ const HelpDeskTable = () => {
         </tbody>
     </table>
     )
+}
+
+
+const ModalContent = () => {
+    const attamentfiles = [
+        {title: 'Document Title', size: 'XSL, 32KB', img: xsl, frame: false},
+        {title: 'Document Title', size: 'DOCS, 18KB', img: docs, frame: false},
+        {title: 'Document Title', size: 'ZIP, 74MB', img: zip, frame: false},
+      ]
+  return (
+    <div className='p-5'>
+        <div className='space-y-2'>
+          <div className='flex items-center gap-2'>
+            <h2 className='text-2xl font-semibold pr-3'>Ticket Title</h2>
+            <span className='h-6 text-sm  px-2 bg-[#F97316] text-base-white inline-flex items-center rounded-md'>In-Progress</span>
+            <span className='h-6 text-sm  px-2 bg-success-100 text-success-600 border border-success-600 inline-flex items-center rounded-md'>Low</span>
+          </div>
+        </div>
+      <div className='mt-10 flex flex-wrap gap-x-14 gap-y-8 2xl:gap-x-24 2xl:gap-y-10'>
+        <div className='space-y-3'>
+            <p className='text-xs uppercase font-semibold'>Ticket Type:</p>
+            <p className='font-medium'>Help Desk</p>
+        </div>
+        <div className='space-y-3'>
+            <p className='text-xs uppercase font-semibold'>Application:</p>
+            <p className='font-medium'>Application-e8</p>
+        </div>
+        <div className='space-y-3'>
+            <p className='text-xs uppercase font-semibold'>Phone number:</p>
+            <p className='font-medium'>+61 234 6783 453 </p>
+        </div>
+        <div className='space-y-3'>
+            <p className='text-xs uppercase font-semibold'>Agent:</p>
+            <div className="flex items-center justify-center gap-x-3">
+              <span className='h-6 w-6 text-xs flex items-center justify-center bg-primary-500 text-base-white rounded-full'>RR</span>
+              <p className='font-medium'>Ronald Richards</p>
+            </div>
+        </div>
+        <div className='space-y-3'>
+            <p className='text-xs uppercase font-semibold'>Description </p>
+            <p className='font-medium whitespace-normal'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis autem asperiores assumenda sunt consequuntur esse non error ea, earum enim. Sed fugit ad a vitae. </p>
+        </div>
+
+        <div className='mt-4 space-y-3'>
+          <p className='text-xs uppercase font-semibold'>Attachments:</p>
+          <div className='flex flex-wrap gap-4'>
+              {attamentfiles.map((item,key)=>(
+                  <div key={key} className='relative h-[184px] w-[176px] flex justify-center bg-surface-light-secondary rounded-lg overflow-hidden'>
+                  <img src={item.img} className={`${item.frame ? 'w-full h-full': 'h-[65px] w-[52px] absolute top-10'} `} alt="" />
+                  <div className='w-[166px] h-[40px] absolute bottom-[5px] flex items-center justify-between px-2 bg-surface-light-primary  rounded-md'>
+                    <div className=''>
+                      <p className='text-xs text-info-500 font-semibold'>{item.title}</p>
+                      <p className='text-[10px] text-textColor-muted font-medium'>{item.size}</p>
+                    </div>
+                    <button className='text-sm p-1 rounded-full text-textColor-muted hover:text-primary-600 hover:bg-primary-100 '>
+                     <GoDownload/>
+                    </button>
+                  </div>
+                  </div>
+              )) }
+          </div>
+        </div>
+      </div>
+
+    </div>
+  )
 }
