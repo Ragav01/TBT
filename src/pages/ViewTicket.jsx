@@ -12,6 +12,7 @@ import jpgsample from '../assets/jpgsample.jpg'
 import pngsample from '../assets/pngsample.jpg'
 import avatar from '../assets/avatar-image.jpg'
 import Texteditor from '../components/Texteditor'
+import { HistoryLog } from '../components/HistoryLog'
 
 export const ViewTicket = () => {
   const navigate = useNavigate();
@@ -39,12 +40,9 @@ export const ViewTicket = () => {
                 <BiEditAlt className='text-lg'/>
                 Edit Tickets
             </Link>
-            <button className='h-10 rounded-md px-3 flex items-center gap-x-2 text-sm font-semibold text-base-black border border-borderColor-secondary hover:bg-primary-100'>
-              Tickets History
-            </button>
+            <HistoryLog/>
         </div>
       </div>
-      
       <div className='p-4 pt-8 mt-6 bg-surface-light-primary border border-borderColor-secondary rounded-lg'>
         <div className='space-y-2'>
           <div className='flex items-center gap-2'>

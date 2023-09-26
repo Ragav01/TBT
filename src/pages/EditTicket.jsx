@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import {FiMoreHorizontal, FiChevronRight, FiUploadCloud} from 'react-icons/fi'
+import {FiMoreHorizontal, FiChevronRight} from 'react-icons/fi'
 import {GoDownload} from 'react-icons/go'
 import {IoAddSharp} from 'react-icons/io5'
 import { Indicators } from '../components/TicketFilter'
